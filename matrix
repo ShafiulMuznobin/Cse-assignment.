@@ -1,0 +1,94 @@
+#include<stdio.h>
+int main ()
+{
+    int a11,a12,a13,a21,a22,a23,a31,a32,a33,b11,b12,b13,b21,b22,b23,b31,b32,b33,m1,m3,m2,m4,m5,m6,m7,m8,m9,p;
+
+    printf("first row of first matrix:");
+    scanf("%d %d %d",&a11,&a12,&a13);
+
+
+    printf("second row of first matrix:");
+    scanf("%d %d %d",&a21,&a22,&a23);
+
+    printf("Third row of first matrix:");
+    scanf("%d %d %d",&a31,&a32,&a33);
+
+
+
+
+    printf("first row of second matrix:");
+    scanf("%d %d %d",&b11,&b12,&b13);
+
+
+    printf("second row of second matrix:");
+
+    scanf("%d %d %d",&b21,&b22,&b23);
+
+    printf("Third row of second matrix:");
+    scanf("%d %d %d",&b31,&b32,&b33);
+
+    printf("Enter what you do with this  matrix ??? \n press: addition 1 / subtraction 2 / multiplication 3  ):");
+
+
+
+    scanf("%d",&p);
+
+
+
+
+    if(p == 1){
+
+    m1=a11+b11;m2=a12+b12;m3=a13+b13;
+    m4=a21+b21;m5=a22+b22;m6=a23+b23;
+    m1=a31+b31;m2=a32+b32;m3=a33+b33;
+
+    printf("the addition of matrix :");
+    printf("\n \n \n");
+    printf("%d %d %d \n %d %d %d",m1,m2,m3,m4,m5,m6);
+    }
+    else if(p==2){
+    m1=a11-b11;m2=a12-b12;m3=a13-b13;
+    m4=a21-b21;m5=a22-b22;m6=a23-b23;
+    m1=a31-b31;m2=a32-b32;m3=a33-b33;
+
+
+    printf("the addition of matrix :");
+    printf("\n \n \n");
+    printf(" %d %d %d \n%d %d %d",m1,m2,m3,m4,m5,m6);
+
+
+
+    }
+
+    else if(p==3){
+
+            m1=a11*b11+a12*b21+a13*b31 ;
+            m2=a11*b12+a12*b22+a13*b32;
+            m3=a11*b13+a12*b23+a13*b33;
+            m4=a21*b11+a22*b21+a23*b31;
+            m5=a21*b12+a22*b22+a23*b32;
+            m6=a21*b13+a22*b23+a23*b33;
+            m7=a31*b11+a32*b21+a33*b31;
+            m8=a31*b12+a32*b22+a33*b32;
+            m9=a31*b13+a32*b23+a33*b33;
+
+
+
+    printf("the addition of matrix :");
+    printf("\n \n \n");
+    printf("%d %d %d \n %d %d %d \n %d %d %d ",m1,m2,m3,m4,m5,m6,m7,m8,m9);
+
+
+    }
+
+
+    else
+        {
+            printf("you have insert wrong value");
+
+            }
+    return 0;
+
+
+
+}
